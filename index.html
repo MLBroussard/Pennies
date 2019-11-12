@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Pennies! 1.3</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <div>
+    <h1 style="font-size:14px">Pennies!</h1>
+    <h2 style="font-size:14px"><button class="button" onclick="mainClick(numClick)">Find A Penny</button> <span id="money">$0.00</span></h2>
+    <p>Click Rate (<span id="rate">$0.01</span>/click)</p>
+    <p>Auto-Earnings: (<span id="bonus">$0.00</span>/<span id="time">5</span> sec)</p>
+    <p>--------------------</p>
+    <p>
+      <h3 style="font-size:11px">Store</h3>
+      <p>Buy upgrades to increase Pennies/sec.</p>
+      <p>--------------------</p>
+      <div class="upgrades">
+        <p>Increase Pennies/Click
+          <br><button class="button" onclick="clickRate(upgrade0)">Click Rate</button> <b><span id="level0Cost">$1.00</span></b>
+          <br>
+          <br>Speed Up Auto-Earnings
+          <br><button class="button" onclick="decrTime(upgrade7)">Time</button> <b><span id="level7Cost">$112,358.13</span></b>
+          <br>
+          <br>Increase Auto-Earnings Over Time
+          <br><button class="button" onclick="buyLevel(upgrade1)">ADD $0.01</button> <b><span id="level1Cost">$10.00</span></b>
+          <br><button class="button" onclick="buyLevel(upgrade2)">ADD $0.05</button> <b><span id="level2Cost">$100.00</span></b>
+          <br><button class="button" onclick="buyLevel(upgrade3)">ADD $0.10</button> <b><span id="level3Cost">$1,000.00</span></b>
+          <br><button class="button" onclick="buyLevel(upgrade4)">ADD $1.00</button> <b><span id="level4Cost">$10,000.00</span></b>
+          <br><button class="button" onclick="buyLevel(upgrade5)">ADD $5.00</button> <b><span id="level5Cost">$100,000.00</span></b>
+          <br><button class="button" onclick="buyLevel(upgrade6)">ADD $10.00</button> <b><span id="level6Cost">$1,000,000.00</span></b>
+      </div>
+      <p>--------------------</p>
+      <div style="font-size:11px">Updates
+        <p></p>
+        <div class="updates">
+          <ul><b>1.3 Update</b>
+            <li><strike>Cookies! Actually, just a message to accept cookies.  More to come. (lol maybe)</strike></li>
+            <li><u>NOTE</u>:  Keeping cookie update private, because Jayson can't deal.</li>
+          </ul>
+          <ul><b>1.2 Update</b>
+            <li>Added font (Press Start 2P)</li>
+            <li>Added function to display in currency format</li>
+            <li>Added "Updates" (lol)</li>
+          </ul>
+          <ul><b>1.1 Update</b>
+            <li>Added "Speed Up Auto-Earnings"</li>
+          </ul>
+        </div>
+      </div>
+  </div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
